@@ -23,7 +23,9 @@ updates:
         patterns:
           - "jvm"
           - "kapt"
-          - "plugin.*"
+          - "plugin.allopen"
+          - "plugin.jpa"
+          - "plugin.spring"
       # Group all version updates, except for Spring Boot
       gradle-version-updates:
         applies-to: version-updates
