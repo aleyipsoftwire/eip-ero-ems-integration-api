@@ -34,8 +34,7 @@ allOpen {
 }
 
 val awsProfile = System.getenv("AWS_PROFILE_ARG") ?: "--profile code-artifact"
-val codeArtifactToken = System.getenv("AWS_CODEARTIFACT_TOKEN")
-// "aws codeartifact get-authorization-token --domain erop-artifacts --domain-owner 063998039290 --query authorizationToken --output text $awsProfile".runCommand()
+val codeArtifactToken = "aws codeartifact get-authorization-token --domain erop-artifacts --domain-owner 063998039290 --query authorizationToken --output text $awsProfile".runCommand()
 
 repositories {
     mavenCentral()
