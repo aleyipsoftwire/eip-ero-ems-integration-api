@@ -89,7 +89,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation")
 
     // Logging
-    runtimeOnly("net.logstash.logback:logstash-logback-encoder:7.3")
+    runtimeOnly("net.logstash.logback:logstash-logback-encoder:8.1")
 
     // spring security
     implementation("org.springframework.boot:spring-boot-starter-security")
@@ -163,7 +163,7 @@ dependencies {
     testImplementation("io.jsonwebtoken:jjwt-jackson:0.11.5")
 
     // Logging
-    runtimeOnly("net.logstash.logback:logstash-logback-encoder:7.3")
+    runtimeOnly("net.logstash.logback:logstash-logback-encoder:8.1")
     // Liquibase plugin for local development
     val liquibaseRuntime by configurations
     liquibaseRuntime("org.liquibase:liquibase-core")
