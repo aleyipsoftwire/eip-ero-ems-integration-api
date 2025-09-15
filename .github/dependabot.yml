@@ -7,6 +7,8 @@ updates:
       interval: "daily"
     assignees:
       - "aleyipsoftwire"
+    allow:
+      - dependency-type: "direct"
     ignore:
       - dependency-name: "uk.gov.dluhc*"
     groups:
@@ -33,6 +35,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    assignees:
+      - "aleyipsoftwire"
     groups:
       # Group all github-action updates
       github-actions:
