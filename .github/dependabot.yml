@@ -21,13 +21,11 @@ updates:
           - "plugin.spring"
           - "plugin.jpa"
           - "plugin.allopen"
-      # Group all direct version updates, except for Spring Boot
+      # Group all version updates, except for Spring Boot
       gradle-version-updates:
         applies-to: version-updates
         patterns: [ "*" ]
-        dependency-type: direct
-        ignore:
-          - "org.springframework.boot"
+        exclude-patterns: [ "org.springframework.boot" ]
     open-pull-requests-limit: 20
 
   - package-ecosystem: "github-actions"
