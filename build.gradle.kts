@@ -159,8 +159,8 @@ dependencies {
     // AWS library to support tests
     testImplementation("software.amazon.awssdk:auth")
     // Libraries to support creating JWTs in tests
-    testImplementation("io.jsonwebtoken:jjwt-impl:0.11.5")
-    testImplementation("io.jsonwebtoken:jjwt-jackson:0.11.5")
+    testImplementation("io.jsonwebtoken:jjwt-impl:0.13.0")
+    testImplementation("io.jsonwebtoken:jjwt-jackson:0.13.0")
 
     // Logging
     runtimeOnly("net.logstash.logback:logstash-logback-encoder:7.3")
