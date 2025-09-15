@@ -136,7 +136,7 @@ dependencies {
     testImplementation("software.amazon.awssdk:sqs") // required to send messages to a queue, which we only need to do in test at the moment
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
-    testImplementation("net.datafaker:datafaker:1.7.0")
+    testImplementation("net.datafaker:datafaker:2.4.4")
     testImplementation("org.springframework.security:spring-security-test")
 
     testImplementation("org.testcontainers:junit-jupiter:1.19.8")
@@ -150,7 +150,7 @@ dependencies {
     testImplementation("org.testcontainers:mysql:1.17.6")
 
     testImplementation("org.wiremock:wiremock-jetty12:3.9.2")
-    testImplementation("net.datafaker:datafaker:1.6.0")
+    testImplementation("net.datafaker:datafaker:2.4.4")
 
     // caching
     implementation("org.springframework.boot:spring-boot-starter-cache")
