@@ -5,14 +5,30 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-#    allow:
-#      - dependency-name: "org.springframework.boot"
-
+    assignees:
+      - "aleyipsoftwire"
+    ignore: [ "uk.gov.dluhc*" ]
     groups:
       # Group all gradle security updates
       gradle-security-updates:
         applies-to: security-updates
         patterns: [ "*" ]
+      # Group all kotlin plugin updates
+      kotlin-plugins:
+        patterns:
+          - "jvm"
+          - "kapt"
+          - "plugin.spring"
+          - "plugin.jpa"
+          - "plugin.allopen"
+      # Group all direct version updates, except for Spring Boot
+      gradle-version-updates:
+        applies-to: version-updates
+        patterns: [ "*" ]
+        dependency-type: direct
+        ignore:
+          - "org.springframework.boot"
+    open-pull-requests-limit: 20
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -23,4 +39,3 @@ updates:
       github-actions:
         applies-to: version-updates
         patterns: [ "*" ]
-    open-pull-requests-limit: 20
