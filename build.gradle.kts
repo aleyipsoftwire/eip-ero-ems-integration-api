@@ -142,7 +142,7 @@ dependencies {
     testImplementation("org.testcontainers:junit-jupiter:1.19.8")
     testImplementation("org.testcontainers:testcontainers:1.19.8")
     testImplementation("org.testcontainers:mysql:1.19.8")
-    testImplementation("org.awaitility:awaitility-kotlin:4.2.0")
+    testImplementation("org.awaitility:awaitility-kotlin:4.3.0")
     testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
 
     testImplementation("org.testcontainers:junit-jupiter:1.17.6")
