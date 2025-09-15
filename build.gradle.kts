@@ -169,7 +169,7 @@ dependencies {
     liquibaseRuntime("org.liquibase:liquibase-core")
     liquibaseRuntime("mysql:mysql-connector-java")
     liquibaseRuntime("org.springframework.boot:spring-boot")
-    liquibaseRuntime("info.picocli:picocli:4.6.1")
+    liquibaseRuntime("info.picocli:picocli:4.7.7")
     liquibaseRuntime("javax.xml.bind:jaxb-api:2.3.1")
     liquibaseRuntime("org.apache.commons:commons-lang3:3.18.0")
 }
