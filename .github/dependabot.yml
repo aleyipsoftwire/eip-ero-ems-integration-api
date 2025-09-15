@@ -7,7 +7,8 @@ updates:
       interval: "daily"
     assignees:
       - "aleyipsoftwire"
-    ignore: [ "uk.gov.dluhc*" ]
+    ignore:
+      - dependency-name: "uk.gov.dluhc*"
     groups:
       # Group all gradle security updates
       gradle-security-updates:
