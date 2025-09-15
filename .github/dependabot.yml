@@ -7,8 +7,10 @@ updates:
       interval: "daily"
     assignees:
       - "aleyipsoftwire"
+    # Only create PRs for direct dependencies
     allow:
       - dependency-type: "direct"
+    # Ignore libs-api dependencies
     ignore:
       - dependency-name: "uk.gov.dluhc*"
     groups:
@@ -21,9 +23,7 @@ updates:
         patterns:
           - "jvm"
           - "kapt"
-          - "plugin.spring"
-          - "plugin.jpa"
-          - "plugin.allopen"
+          - "plugin.*"
       # Group all version updates, except for Spring Boot
       gradle-version-updates:
         applies-to: version-updates
