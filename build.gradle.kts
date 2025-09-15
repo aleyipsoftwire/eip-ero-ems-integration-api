@@ -149,7 +149,7 @@ dependencies {
     testImplementation("org.testcontainers:testcontainers:1.17.6")
     testImplementation("org.testcontainers:mysql:1.17.6")
 
-    testImplementation("org.wiremock:wiremock-jetty12:3.9.2")
+    testImplementation("org.wiremock:wiremock-jetty12:3.13.1")
     testImplementation("net.datafaker:datafaker:1.6.0")
 
     // caching
