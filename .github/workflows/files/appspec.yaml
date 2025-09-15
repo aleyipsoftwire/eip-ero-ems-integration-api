@@ -1,9 +1,0 @@
-version: 0.0
-Resources:
-  - TargetService:
-      Type: AWS::ECS::Service
-      Properties:
-        TaskDefinition: "placeholder"
-        LoadBalancerInfo:
-          ContainerName: "{env}-ems-integr-api-ecs-container"
-          ContainerPort: 8080
