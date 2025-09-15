@@ -17,7 +17,7 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint-idea") version "11.0.0"
     id("org.openapi.generator") version "7.0.1"
     id("org.owasp.dependencycheck") version "12.1.3"
-    id("org.liquibase.gradle") version "2.0.4"
+    id("org.liquibase.gradle") version "3.0.2"
 }
 
 group = "uk.gov.dluhc"
